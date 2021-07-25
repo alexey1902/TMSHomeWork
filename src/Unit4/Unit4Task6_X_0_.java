@@ -27,10 +27,6 @@ public class Unit4Task6_X_0_ {
                 }
                 System.out.println("|");
             }
-            if (steps == 9) {
-                System.out.println("Ничья!");
-                break;
-            }
             if (isWin && isFirstPlayer) {
                 System.out.println("Победил второй игрок!");
                 break;
@@ -98,6 +94,10 @@ public class Unit4Task6_X_0_ {
             if (XO[0][0] == XO[1][1] && XO[0][0] == XO[2][2] && XO[0][0] != ' ' ||
                     XO[0][2] == XO[1][1] && XO[0][2] == XO[2][0] && XO[0][2] != ' ') {
                 isWin = true;
+            }
+            if (steps == 9 && isWin == false) {
+                System.out.println("Ничья!");
+                break;
             }
             isFirstPlayer = !isFirstPlayer;
         }
