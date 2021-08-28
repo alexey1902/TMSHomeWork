@@ -16,13 +16,9 @@ public class Air extends Transport{
         this.minLengthOfTheLine = minLengthOfTheLine;
     }
 
-    public int getWingspan() {
-        return wingspan;
-    }
+    public int getWingspan() { return wingspan; }
 
-    public int getMinLengthOfTheLine() {
-        return minLengthOfTheLine;
-    }
+    public int getMinLengthOfTheLine() { return minLengthOfTheLine; }
 
     @Override
     void show() {

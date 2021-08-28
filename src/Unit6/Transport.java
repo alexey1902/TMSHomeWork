@@ -6,9 +6,7 @@ public class Transport {
     int mass;
     Label label;
 
-    Transport() {
-        this.powerHorse = this.maxSpeed = this.mass = 0;
-    }
+    Transport() { this.powerHorse = this.maxSpeed = this.mass = 0; }
 
     Transport(int powerHorse, int maxSpeed, int mass, Label label) {
         this.powerHorse = powerHorse;

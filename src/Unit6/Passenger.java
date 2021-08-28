@@ -28,4 +28,10 @@ public class Passenger extends Overland {
         super.show();
         System.out.println("Количество пассажиров: " + this.getAmountOfPassengers());
     }
+
+    public static void main(String[] args) {
+        Passenger passenger = new Passenger(12, 7, 7, Label.Audi, 4, 10, 4);
+        passenger.show();
+        passenger.countRoute(2);
+    }
 }
