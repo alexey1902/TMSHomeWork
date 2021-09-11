@@ -1,8 +1,11 @@
-package ShopUnit14_15;
+package ShopUnit16;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Product implements Serializable {
     private final int id;
@@ -35,5 +38,19 @@ public class Product implements Serializable {
         System.out.println("Цена: " + this.getPrice());
         System.out.println("ID: " + this.getId());
         System.out.println("Добавлен: " + dtf.format(this.getDateTime()) + '\n');
+    }
+
+    public static String getNormalName(){
+        String productName;
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            productName = scanner.nextLine();
+            Pattern pattern = Pattern.compile("^[А-Я][а-я]+(\s[А-Я]?[а-я]+)*(\s[0-9]*)*$");
+            Matcher matcher = pattern.matcher(productName);
+            if(matcher.find()){
+                return productName;
+            }
+            System.out.println("Вводите заново: ");
+        }
     }
 }

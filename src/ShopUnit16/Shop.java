@@ -1,4 +1,4 @@
-package ShopUnit14_15;
+package ShopUnit16;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-import static ShopUnit14_15.Methods.*;
+import static ShopUnit16.Methods.*;
 
 public class Shop implements Serializable {
     private List<Product> productList = new ArrayList<>();

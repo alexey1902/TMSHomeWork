@@ -1,4 +1,4 @@
-package ShopUnit14_15;
+package ShopUnit16;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -6,10 +6,12 @@ import java.io.*;
 import java.util.List;
 import java.util.Scanner;
 
+import static ShopUnit16.Product.getNormalName;
+
 public class Methods {
 
     public static void serialize(Shop shop) {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("src/ShopUnit14_15/products.dat"))) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("src/ShopUnit16/products.dat"))) {
             oos.writeObject(shop.getProductList());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
@@ -17,7 +19,7 @@ public class Methods {
     }
     @SuppressWarnings("unchecked")
     public static void deserialize(Shop shop) {
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("src/ShopUnit14_15/products.dat"))) {
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("src/ShopUnit16/products.dat"))) {
             shop.setProductList ((List<Product>) ois.readObject());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
@@ -65,9 +67,8 @@ public class Methods {
     }
 
     public static @NotNull Product createNewProduct(String instruction){
-        Scanner scanner = new Scanner(System.in);
         System.out.println(instruction + "\nВведите наименование: ");
-        String name = scanner.nextLine();
+        String name = getNormalName();
         System.out.println("Введите цену: ");
         int price = getPositiveNumber();
         System.out.println("Введите ID: ");
