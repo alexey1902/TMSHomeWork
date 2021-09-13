@@ -45,7 +45,7 @@ public class Product implements Serializable {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             productName = scanner.nextLine();
-            Pattern pattern = Pattern.compile("^[А-Я][а-я]+(\s[А-Я]?[а-я]+)*(\s[0-9]*)*$");
+            Pattern pattern = Pattern.compile("^(([А-Я][а-я]*(\\s[А-Я]?[а-я]+)*)|([A-Z][a-z]*(\\s[A-Z]?[a-z]+)*))(\\s?[0-9]*)*$");
             Matcher matcher = pattern.matcher(productName);
             if(matcher.find()){
                 return productName;
