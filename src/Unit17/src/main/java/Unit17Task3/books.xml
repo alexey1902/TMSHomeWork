@@ -1,0 +1,1 @@
+{"allBooks":[{"year":2000,"article":1,"name":"Name1","similarBooks":null},{"year":2002,"article":2,"name":"Name2","similarBooks":null},{"year":2003,"article":3,"name":"Name3","similarBooks":null},{"year":2004,"article":4,"name":"Name4","similarBooks":[{"year":2007,"article":777,"name":"Test","similarBooks":null},{"year":2009,"article":333,"name":"Test2","similarBooks":null}]}]}

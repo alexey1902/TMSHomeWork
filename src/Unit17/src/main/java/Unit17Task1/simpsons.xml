@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<simpsonFamily>
+    <parents>
+        <father>
+            <name>Homer</name>
+            <hobby>beer</hobby>
+            <age>45</age>
+        </father>
+
+        <mother>
+            <name>Marge</name>
+            <hobby>family</hobby>
+            <age>30</age>
+        </mother>
+    </parents>
+
+    <children>
+        <son>
+            <name>Bart</name>
+            <hobby>skate</hobby>
+            <age>13</age>
+        </son>
+
+        <daughters>
+            <elder>
+                <name>Lisa</name>
+                <hobby>science</hobby>
+                <age>8</age>
+            </elder>
+
+            <younger>
+                <name>Maggie</name>
+                <hobby>none</hobby>
+                <age>3</age>
+            </younger>
+
+        </daughters>
+    </children>
+
+</simpsonFamily>
