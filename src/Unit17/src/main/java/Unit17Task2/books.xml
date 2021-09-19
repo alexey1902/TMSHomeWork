@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<library>
+    <allBooks>
+        <name>Name1</name>
+        <year>2000</year>
+        <article>1</article>
+    </allBooks>
+    <allBooks>
+        <name>Name2</name>
+        <year>2002</year>
+        <article>2</article>
+    </allBooks>
+    <allBooks>
+        <name>Name3</name>
+        <year>2003</year>
+        <article>3</article>
+    </allBooks>
+    <allBooks>
+        <name>Name4</name>
+        <year>2004</year>
+        <article>4</article>
+        <similarBooks>
+            <name>Test</name>
+            <year>2007</year>
+            <article>777</article>
+        </similarBooks>
+        <similarBooks>
+            <name>Test2</name>
+            <year>2009</year>
+            <article>333</article>
+        </similarBooks>
+    </allBooks>
+</library>
